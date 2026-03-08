@@ -16,7 +16,7 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | Coming Soon |
+| Arrays | 1 |
 | Binary Search | 5 |
 | Linked List | Coming Soon |
 | Stack | Coming Soon |
@@ -24,6 +24,16 @@ Problems solved from:
 | Trees | Coming Soon |
 | Graph | Coming Soon |
 | Dynamic Programming | Coming Soon |
+
+
+
+---
+
+## Arrays Problems
+
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Remove Duplicates from Sorted Array | 26 | [Code](Arrays/26_remove_duplicates_sorted_array.cpp) |
 
 ---
 
@@ -41,6 +51,6 @@ Problems solved from:
 
 ## Progress
 
-Total Problems Solved: **5**
+Total Problems Solved: **6**
 
 Language Used: **C++**
