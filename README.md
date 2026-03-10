@@ -16,7 +16,7 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 1 |
+| Arrays | 2 |
 | Binary Search | 5 |
 | Linked List | Coming Soon |
 | Stack | Coming Soon |
@@ -34,6 +34,7 @@ Problems solved from:
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Remove Duplicates from Sorted Array | 26 | [Code](Arrays/26_remove_duplicates_sorted_array.cpp) |
+| 2 | Move Zeroes | 283 | [Code](Arrays/283_move_zeroes.cpp) |
 
 ---
 
@@ -51,6 +52,6 @@ Problems solved from:
 
 ## Progress
 
-Total Problems Solved: **6**
+Total Problems Solved: **7**
 
 Language Used: **C++**
