@@ -8,7 +8,7 @@ Problems solved from:
 
 - LeetCode
 - HackerRank
-- Codeforces
+- GeeksforGeeks
 
 ---
 
