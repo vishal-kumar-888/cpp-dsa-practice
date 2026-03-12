@@ -48,11 +48,25 @@ Problems solved from:
 | 4 | Search in Rotated Sorted Array | 33 | [Code](BinarySearch/33_search_rotated_array.cpp) |
 | 5 | Search in Rotated Sorted Array II | 81 | [Code](BinarySearch/81_search_rotated_array_II.cpp) |
 | 6 | Find Peak Element | 162 | [code](BinarySearch/162_find_peak_element.cpp) |
+| 7 | Sqrt(x)  | 69 | [code](BinarySearch/69_sqrt_x.cpp) |
+ 
+---
+
+---
+
+# GeeksforGeeks Problems
+
+| # | Problem | Platform | Solution |
+|---|--------|----------|---------|
+| 1 | Nth Root of M | GFG | [Code](BinarySearch/nth_root_of_m.cpp) |
 
 ---
 
 ## Progress
 
-Total Problems Solved: **7**
+LeetCode Problems: 10  
+GeeksforGeeks Problems: 1  
+
+Total Problems Solved: **11**
 
 Language Used: **C++**
