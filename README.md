@@ -16,8 +16,8 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 2 |
-| Binary Search | 5 |
+| Arrays | 3 |
+| Binary Search | 6 |
 | Linked List | Coming Soon |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
@@ -35,7 +35,7 @@ Problems solved from:
 |---|--------|---------|---------|
 | 1 | Remove Duplicates from Sorted Array | 26 | [Code](Arrays/26_remove_duplicates_sorted_array.cpp) |
 | 2 | Move Zeroes | 283 | [Code](Arrays/283_move_zeroes.cpp) |
-
+| 3 | Find the Peaks |2951| [code](Arrays/2951_find_the_peaks.cpp) |
 ---
 
 ## Binary Search Problems
@@ -47,6 +47,7 @@ Problems solved from:
 | 3 | Find First and Last Position | 34 | [Code](BinarySearch/34_find_first_last_position.cpp) |
 | 4 | Search in Rotated Sorted Array | 33 | [Code](BinarySearch/33_search_rotated_array.cpp) |
 | 5 | Search in Rotated Sorted Array II | 81 | [Code](BinarySearch/81_search_rotated_array_II.cpp) |
+| 6 | Find Peak Element | 162 | [code](BinarySearch/162_find_peak_element.cpp) |
 
 ---
 
