@@ -17,8 +17,8 @@ Problems solved from:
 | Topic | Problems |
 |------|---------|
 | Arrays | 3 |
-| Binary Search | 6 |
-| Linked List | Coming Soon |
+| Binary Search | 8 |
+| Linked List | 1 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
@@ -51,6 +51,12 @@ Problems solved from:
 | 7 | Sqrt(x)  | 69 | [code](BinarySearch/69_sqrt_x.cpp) |
  
 ---
+
+## Linked List Problems
+
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Remove Linked List Elements | 203 | [Code](LinkedList/203_remove_linked_list_elements.cpp) |
 
 ---
 
