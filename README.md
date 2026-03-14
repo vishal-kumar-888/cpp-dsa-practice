@@ -18,7 +18,7 @@ Problems solved from:
 |------|---------|
 | Arrays | 3 |
 | Binary Search | 8 |
-| Linked List | 2 |
+| Linked List | 3 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
@@ -58,6 +58,7 @@ Problems solved from:
 |---|--------|---------|---------|
 | 1 | Remove Linked List Elements | 203 | [Code](LinkedList/203_remove_linked_list_elements.cpp) |
 | 2 | Delete Node in a Linked List | 237 | [Code](LinkedList/237_delete_node_in_linked_list.cpp) |
+| 3 | Middle of the Linked List | 876 | [Code](LinkedList/876_middle_of_linked_list.cpp) |
 
 ---
 
@@ -71,9 +72,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 12  
+LeetCode Problems: 13  
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **13**
+Total Problems Solved: **14**
 
 Language Used: **C++**
