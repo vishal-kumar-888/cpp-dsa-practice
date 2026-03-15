@@ -16,9 +16,10 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 3 |
+| Arrays | 4 |
 | Binary Search | 8 |
-| Linked List | 3 |
+| Linked List | 4 |
+| Math | 1 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
@@ -36,6 +37,7 @@ Problems solved from:
 | 1 | Remove Duplicates from Sorted Array | 26 | [Code](Arrays/26_remove_duplicates_sorted_array.cpp) |
 | 2 | Move Zeroes | 283 | [Code](Arrays/283_move_zeroes.cpp) |
 | 3 | Find the Peaks |2951| [code](Arrays/2951_find_the_peaks.cpp) |
+| 4 | Reverse String | 344 | [Code](Arrays/344_reverse_string.cpp) |
 ---
 
 ## Binary Search Problems
@@ -52,6 +54,14 @@ Problems solved from:
  
 ---
 
+## Math Problems
+
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Reverse Integer | 7 | [Code](Math/7_reverse_integer.cpp) |
+
+---
+
 ## Linked List Problems
 
 | # | Problem | LeetCode | Solution |
@@ -59,6 +69,7 @@ Problems solved from:
 | 1 | Remove Linked List Elements | 203 | [Code](LinkedList/203_remove_linked_list_elements.cpp) |
 | 2 | Delete Node in a Linked List | 237 | [Code](LinkedList/237_delete_node_in_linked_list.cpp) |
 | 3 | Middle of the Linked List | 876 | [Code](LinkedList/876_middle_of_linked_list.cpp) |
+| 4 | Reverse Linked List | 206 | [Code](LinkedList/206_reverse_linked_list.cpp) |
 
 ---
 
@@ -72,9 +83,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 13  
+LeetCode Problems: 16  
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **14**
+Total Problems Solved: **17**
 
 Language Used: **C++**
