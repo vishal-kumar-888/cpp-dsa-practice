@@ -16,9 +16,9 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 4 |
+| Arrays | 5 |
 | Binary Search | 8 |
-| Linked List | 4 |
+| Linked List | 5 |
 | Math | 1 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
@@ -38,6 +38,7 @@ Problems solved from:
 | 2 | Move Zeroes | 283 | [Code](Arrays/283_move_zeroes.cpp) |
 | 3 | Find the Peaks |2951| [code](Arrays/2951_find_the_peaks.cpp) |
 | 4 | Reverse String | 344 | [Code](Arrays/344_reverse_string.cpp) |
+| 5 | Rotate Array | 189 | [Code](Arrays/189_rotate_array.cpp) |
 ---
 
 ## Binary Search Problems
@@ -70,7 +71,7 @@ Problems solved from:
 | 2 | Delete Node in a Linked List | 237 | [Code](LinkedList/237_delete_node_in_linked_list.cpp) |
 | 3 | Middle of the Linked List | 876 | [Code](LinkedList/876_middle_of_linked_list.cpp) |
 | 4 | Reverse Linked List | 206 | [Code](LinkedList/206_reverse_linked_list.cpp) |
-
+| 5 | Rotate List | 61 | [Code](LinkedList/61_rotate_list.cpp) |
 ---
 
 # GeeksforGeeks Problems
@@ -83,9 +84,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 16  
+LeetCode Problems: 18 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **17**
+Total Problems Solved: **19**
 
 Language Used: **C++**
