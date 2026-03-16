@@ -20,7 +20,7 @@ Problems solved from:
 | Binary Search | 8 |
 | Linked List | 5 |
 | Math | 1 |
-| Bit Manipulation | 1 |
+| Bit Manipulation | 2 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
@@ -61,6 +61,8 @@ Problems solved from:
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Single Number | 136 | [Code](BitManipulation/136_single_number.cpp) |
+| 2 | Missing Number | 268 | [Code](BitManipulation/268_missing_number.cpp) |
+
 
 ---
 
@@ -93,9 +95,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 18 
+LeetCode Problems: 20 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **19**
+Total Problems Solved: **21**
 
 Language Used: **C++**
