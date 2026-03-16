@@ -20,6 +20,7 @@ Problems solved from:
 | Binary Search | 8 |
 | Linked List | 5 |
 | Math | 1 |
+| Bit Manipulation | 1 |
 | Stack | Coming Soon |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
@@ -53,6 +54,14 @@ Problems solved from:
 | 6 | Find Peak Element | 162 | [code](BinarySearch/162_find_peak_element.cpp) |
 | 7 | Sqrt(x)  | 69 | [code](BinarySearch/69_sqrt_x.cpp) |
  
+---
+
+## Bit Manipulation Problems
+
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Single Number | 136 | [Code](BitManipulation/136_single_number.cpp) |
+
 ---
 
 ## Math Problems
