@@ -16,7 +16,7 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 5 |
+| Arrays | 7 |
 | Binary Search | 8 |
 | Linked List | 5 |
 | Math | 1 |
@@ -40,6 +40,8 @@ Problems solved from:
 | 3 | Find the Peaks |2951| [code](Arrays/2951_find_the_peaks.cpp) |
 | 4 | Reverse String | 344 | [Code](Arrays/344_reverse_string.cpp) |
 | 5 | Rotate Array | 189 | [Code](Arrays/189_rotate_array.cpp) |
+| 6 | Two Sum | 1 | [Code](Arrays/1_two_sum.cpp) |
+| 7 | Max Number of K-Sum Pairs | 1679 | [Code](Arrays/1679_max_k_sum_pairs.cpp) |
 ---
 
 ## Binary Search Problems
@@ -95,9 +97,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 20 
+LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **21**
+Total Problems Solved: **23**
 
 Language Used: **C++**
