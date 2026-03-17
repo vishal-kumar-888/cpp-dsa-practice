@@ -73,6 +73,7 @@ Problems solved from:
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Reverse Integer | 7 | [Code](Math/7_reverse_integer.cpp) |
+| 2 | Palindrome Number | 9 | [Code](Math/9_palindrome_number.cpp) |
 
 ---
 
@@ -100,6 +101,6 @@ Problems solved from:
 LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **23**
+Total Problems Solved: **24**
 
 Language Used: **C++**
