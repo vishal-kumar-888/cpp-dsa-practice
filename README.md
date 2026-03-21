@@ -21,7 +21,7 @@ Problems solved from:
 | Linked List | 5 |
 | Math | 1 |
 | Bit Manipulation | 2 |
-| Sliding Window | 1 |
+| Sliding Window | 2 |
 | Queue | Coming Soon |
 | Trees | Coming Soon |
 | Graph | Coming Soon |
@@ -93,6 +93,7 @@ Problems solved from:
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Minimum Size Subarray Sum | 209 | [Code](SlidingWindow/209_min_subarray_sum.cpp) |
+| 2 | Longest Substring Without Repeating Characters | 3 | [Code](SlidingWindow/3_longest_substring_without_repeating.cpp) |
 
 # GeeksforGeeks Problems
 
@@ -107,6 +108,6 @@ Problems solved from:
 LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **24**
+Total Problems Solved: **25**
 
 Language Used: **C++**
