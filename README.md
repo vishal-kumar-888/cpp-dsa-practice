@@ -117,6 +117,6 @@ Problems solved from:
 LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **27**
+Total Problems Solved: **30**
 
 Language Used: **C++**
