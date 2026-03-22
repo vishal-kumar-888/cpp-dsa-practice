@@ -96,6 +96,14 @@ Problems solved from:
 | 2 | Longest Substring Without Repeating Characters | 3 | [Code](SlidingWindow/3_longest_substring_without_repeating.cpp) |
 | 3 | Container With Most Water | 11 | [Code](TwoPointers/11_container_with_most_water.cpp) |
 
+--
+
+## Matrix Problems
+
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Matrix Diagonal Sum | 1572 | [Code](Matrix/1572_diagonal_sum.cpp) |
+
 # GeeksforGeeks Problems
 
 | # | Problem | Platform | Solution |
@@ -109,6 +117,6 @@ Problems solved from:
 LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **25**
+Total Problems Solved: **27**
 
 Language Used: **C++**
