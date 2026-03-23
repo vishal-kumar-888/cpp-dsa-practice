@@ -42,6 +42,7 @@ Problems solved from:
 | 5 | Rotate Array | 189 | [Code](Arrays/189_rotate_array.cpp) |
 | 6 | Two Sum | 1 | [Code](Arrays/1_two_sum.cpp) |
 | 7 | Max Number of K-Sum Pairs | 1679 | [Code](Arrays/1679_max_k_sum_pairs.cpp) |
+| 8 | Valid Mountain Array| [code](Arrays/941_valid_mountain_array.cpp) |
 ---
 
 ## Binary Search Problems
@@ -55,6 +56,7 @@ Problems solved from:
 | 5 | Search in Rotated Sorted Array II | 81 | [Code](BinarySearch/81_search_rotated_array_II.cpp) |
 | 6 | Find Peak Element | 162 | [code](BinarySearch/162_find_peak_element.cpp) |
 | 7 | Sqrt(x)  | 69 | [code](BinarySearch/69_sqrt_x.cpp) |
+
  
 ---
 
@@ -117,6 +119,6 @@ Problems solved from:
 LeetCode Problems: 21 
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **30**
+Total Problems Solved: **31**
 
 Language Used: **C++**
