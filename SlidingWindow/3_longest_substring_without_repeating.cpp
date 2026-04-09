@@ -5,6 +5,7 @@
 // Space Complexity: O(1)
 
 #include <vector>
+#include<iostream>
 #include <string>
 using namespace std;
 
@@ -19,6 +20,7 @@ public:
         for (int right = 0; right < s.size(); right++) {
 
             if (lastSeen[s[right]] != -1) {
+                cout<<"-> "<<s[right]<<endl;
                 left = max(left, lastSeen[s[right]] + 1);
             }
 
@@ -30,3 +32,9 @@ public:
         return maxLen;
     }
 };
+
+int main(){
+
+    Solution s1;
+    cout<< "length of longest substring without repeating characters: "<< s1.lengthOfLongestSubstring("abcabcbb")<<endl;
+}

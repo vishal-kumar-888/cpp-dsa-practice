@@ -23,9 +23,9 @@ Problems solved from:
 | Bit Manipulation | 2 |
 | Sliding Window | 2 |
 | Queue | Coming Soon |
-| Trees | Coming Soon |
+| Trees | 4 |
 | Graph | Coming Soon |
-| Dynamic Programming | Coming Soon |
+| Dynamic Programming | Coming Soon
 
 
 
@@ -69,6 +69,14 @@ Problems solved from:
 
 
 ---
+
+## Binary Tree Problems
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Binary Tree Preorder Traversal | 144 | [Code](Trees/144_preorder_traversal.cpp) |
+| 2 | Binary Tree Postorder Traversal | 145 | [Code](Trees/145_postorder_traversal.cpp) |
+| 3 | Binary Tree Inorder Traversal | 94 | [Code](Trees/94_inorder_traversal.cpp) |
+| 4 | Binary Tree Level Order Traversal | 102 | [Code](Trees/102_level_order_traversal.cpp) |
 
 ## Math Problems
 
@@ -116,9 +124,9 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 21 
+LeetCode Problems: 33
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **31**
+Total Problems Solved: **34**
 
 Language Used: **C++**
