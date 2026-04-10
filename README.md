@@ -77,6 +77,7 @@ Problems solved from:
 | 2 | Binary Tree Postorder Traversal | 145 | [Code](Trees/145_postorder_traversal.cpp) |
 | 3 | Binary Tree Inorder Traversal | 94 | [Code](Trees/94_inorder_traversal.cpp) |
 | 4 | Binary Tree Level Order Traversal | 102 | [Code](Trees/102_level_order_traversal.cpp) |
+| 5 | Diameter of Binary Tree | 543 | [Code](Trees/543_diameter_of_binary_tree.cpp) |
 
 ## Math Problems
 
