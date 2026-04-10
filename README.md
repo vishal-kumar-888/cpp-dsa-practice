@@ -23,7 +23,7 @@ Problems solved from:
 | Bit Manipulation | 2 |
 | Sliding Window | 2 |
 | Queue | Coming Soon |
-| Trees | 4 |
+| Trees | 8 |
 | Graph | Coming Soon |
 | Dynamic Programming | Coming Soon
 
@@ -77,7 +77,10 @@ Problems solved from:
 | 2 | Binary Tree Postorder Traversal | 145 | [Code](Trees/145_postorder_traversal.cpp) |
 | 3 | Binary Tree Inorder Traversal | 94 | [Code](Trees/94_inorder_traversal.cpp) |
 | 4 | Binary Tree Level Order Traversal | 102 | [Code](Trees/102_level_order_traversal.cpp) |
-| 5 | Diameter of Binary Tree | 543 | [Code](Trees/543_diameter_of_binary_tree.cpp) |
+| 5 | Diameter of Binary Tree | 543 | [Code](Trees/543_Diameter_of_Binary_Tree.cpp) |
+| 6 | Sum of Left Leaves | 404 | [Code](Trees/404_Sum_of_Left_Leaves.cpp) |
+| 7 | Maximum Depth of Binary Tree | 104 | [Code](Trees/104_Maximum_Depth_of_Binary.cpp) |
+| 8 | Count all the leaf nodes in a binary tree | 222 | [Code](Trees/222_Count_all_Nodes.cpp) |
 
 ## Math Problems
 
@@ -128,6 +131,6 @@ Problems solved from:
 LeetCode Problems: 33
 GeeksforGeeks Problems: 1  
 
-Total Problems Solved: **34**
+Total Problems Solved: **38**
 
 Language Used: **C++**
