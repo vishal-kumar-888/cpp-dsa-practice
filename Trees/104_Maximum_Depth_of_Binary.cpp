@@ -35,4 +35,4 @@ int main() {
 
     cout << "Maximum Depth: " << s.maxDepth(root) << endl; // Output: 3
     return 0;
-}
+} 

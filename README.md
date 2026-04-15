@@ -27,10 +27,7 @@ Problems solved from:
 | Graph | Coming Soon |
 | Dynamic Programming | Coming Soon
 
-
-
 ---
-
 ## Arrays Problems
 
 | # | Problem | LeetCode | Solution |

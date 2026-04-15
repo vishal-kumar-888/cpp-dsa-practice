@@ -69,4 +69,4 @@ int main() {
     cout << "Sum of left leaves: " << result << endl;
 
     return 0;
-}
+} 
