@@ -78,6 +78,13 @@ Problems solved from:
 | 6 | Sum of Left Leaves | 404 | [Code](Trees/404_Sum_of_Left_Leaves.cpp) |
 | 7 | Maximum Depth of Binary Tree | 104 | [Code](Trees/104_Maximum_Depth_of_Binary.cpp) |
 | 8 | Count all the leaf nodes in a binary tree | 222 | [Code](Trees/222_Count_all_Nodes.cpp) |
+| 9 | 110_Balanced_Binary Problem | 110 | [Code](Trees/110_Balanced_Binary_Tree.cpp) |
+| 10 | 101_Symmetric_Tree | 101 | [Code](Trees/101_Symmetric_Tree.cpp) |
+| 11 | 100_Same_Tree | 100 | [Code](Trees/100_Same_Tree.cpp) |
+| 12 | Bottom view of tree | [Code](Trees/Bottom_view_of_tree.cpp) |
+| 13 | top view of tree | [Code](Trees/top_view_of_tree.cpp) |
+| 14 | left view of tree | [Code](Trees/Left_View_of_tree.cpp) |
+| 15 | right view of tree | [Code](Trees/Right_view_of_tree.cpp) |
 
 ## Math Problems
 
