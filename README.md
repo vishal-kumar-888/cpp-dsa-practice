@@ -86,6 +86,11 @@ Problems solved from:
 | 14 | left view of tree | [Code](Trees/Left_View_of_tree.cpp) |
 | 15 | right view of tree | [Code](Trees/Right_view_of_tree.cpp) |
 
+# Graph Problems
+| # | Problem | LeetCode | Solution |
+| 1 | BFS | 1 | [code](graph/bfs.cpp) |
+
+
 ## Math Problems
 
 | # | Problem | LeetCode | Solution |

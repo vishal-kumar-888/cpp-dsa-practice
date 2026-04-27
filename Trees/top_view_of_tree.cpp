@@ -100,3 +100,5 @@ int main() {
 
     return 0;
 }
+
+// how cpp working tell me ?    

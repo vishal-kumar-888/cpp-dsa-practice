@@ -55,6 +55,67 @@ public:
     }
 };
 
+//  adjacency matrix representation of graph
+ 
+class GraphMatrix {
+    int V; // number of vertices
+    int adjMatrix[100][100]; // adjacency matrix
+public:
+    GraphMatrix(int V) {
+        this->V = V;
+        for(int i = 0; i < V; i++) {
+            for(int j = 0; j < V; j++) {
+                adjMatrix[i][j] = 0; // initialize all entries to 0
+            }
+        }   
+    }
+
+    // add edge to the graph
+    void addEdge(int u, int v) {
+        adjMatrix[u][v] = 1; // mark the edge in the adjacency matrix
+        adjMatrix[v][u] = 1; // mark the edge in the adjacency matrix (undirected)
+    }
+   
+     
+
+};
+
+class solutionMatrix {
+public:    
+    vector<int> getAdjMatrix(GraphMatrix g, int vertex) {
+        vector<int> neighbors;
+        for(int i = 0; i < g.getV(); i++) {
+            if(g.adjMatrix[vertex][i] == 1) { // Check if there is an edge
+                neighbors.push_back(i);
+            }
+        }
+        return neighbors;
+    }
+    void bfsMatrix(GraphMatrix g, int start) {
+        vector<bool> visited(100, false); // visited array
+        queue<int> q; // queue for BFS
+        
+        q.push(start); // start BFS from the given node
+        visited[start] = true; // mark the start node as visited
+        
+        while(!q.empty()) {
+            int current = q.front();
+            q.pop();
+            cout << current << " "; // Process the current node
+            
+            // Visit all neighbors of current node
+            vector<int> neighbors = getAdjMatrix(g, current);
+            for(int neighbor : neighbors) {
+                if(!visited[neighbor]) {
+                    visited[neighbor] = true;
+                    q.push(neighbor);
+                }
+            }
+        }
+        cout << endl;
+    }
+};
+
 // Example usage
 int main() {
     Graph g(6);
@@ -76,6 +137,17 @@ int main() {
         cout << neighbor << " ";
     }
     cout << endl;
+    
+    int n =3;
+
+    vector<vector<int>> edges;
+
+    vector<vector<int>> graph(n);
+        for (const auto& edge : edges) {
+            int u = edge[0], v = edge[1];
+            graph[u].push_back(v);
+            graph[v].push_back(u);
+        }
     
     return 0;
 }
