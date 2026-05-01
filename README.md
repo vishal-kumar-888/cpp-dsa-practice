@@ -112,7 +112,11 @@ Problems solved from:
 | 4 | Reverse Linked List | 206 | [Code](LinkedList/206_reverse_linked_list.cpp) |
 | 5 | Rotate List | 61 | [Code](LinkedList/61_rotate_list.cpp) |
 ---
-
+## Prefix Sum Problems
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Build_Prefix_sum_array |  |[Code](Prefix/Build_Prefix_sum_array.cpp) |
+---
 ## Sliding Window Problems
 
 | # | Problem | LeetCode | Solution |
