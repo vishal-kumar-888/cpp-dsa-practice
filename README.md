@@ -16,16 +16,16 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 7 |
+| Arrays | 11 |
 | Binary Search | 8 |
+| Binary Trees | 18 |
+| Binary Search Trees | 2 |
 | Linked List | 5 |
 | Math | 1 |
 | Bit Manipulation | 2 |
-| Sliding Window | 2 |
-| Queue | Coming Soon |
-| Trees | 8 |
-| Graph | Coming Soon |
-| Dynamic Programming | Coming Soon
+| Prefix | 1 |
+| Sliding Window | 3 |
+| Graph | 2 |
 
 ---
 ## Arrays Problems
@@ -40,8 +40,11 @@ Problems solved from:
 | 6 | Two Sum | 1 | [Code](Arrays/1_two_sum.cpp) |
 | 7 | Max Number of K-Sum Pairs | 1679 | [Code](Arrays/1679_max_k_sum_pairs.cpp) |
 | 8 | Valid Mountain Array| [code](Arrays/941_valid_mountain_array.cpp) |
----
+| 9 | Maximum Product of Two Elements in an Array | 1464 | [Code](Arrays/1464_max_product_two_elements.cpp) |
+| 10 | Find Minimum and Maximum in Array |  | [Code](Arrays/get_min_max.cpp) |
+| 11 | Linear Search|  | [Code](Arrays/linear_search.cpp) |
 
+---
 ## Binary Search Problems
 
 | # | Problem | LeetCode | Solution |
@@ -53,10 +56,10 @@ Problems solved from:
 | 5 | Search in Rotated Sorted Array II | 81 | [Code](BinarySearch/81_search_rotated_array_II.cpp) |
 | 6 | Find Peak Element | 162 | [code](BinarySearch/162_find_peak_element.cpp) |
 | 7 | Sqrt(x)  | 69 | [code](BinarySearch/69_sqrt_x.cpp) |
+| 8 | Nth Root of M | GeeksforGeeks | [Code]( BinarySearch/nth_root_of_m.cpp) |
 
  
 ---
-
 ## Bit Manipulation Problems
 
 | # | Problem | LeetCode | Solution |
@@ -66,7 +69,6 @@ Problems solved from:
 
 
 ---
-
 ## Binary Tree Problems
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
@@ -85,23 +87,31 @@ Problems solved from:
 | 13 | top view of tree | [Code](Trees/top_view_of_tree.cpp) |
 | 14 | left view of tree | [Code](Trees/Left_View_of_tree.cpp) |
 | 15 | right view of tree | [Code](Trees/Right_view_of_tree.cpp) |
+| 16 | Zig_Zag Traversal | [Code](Trees/ZigZag_traversal.cpp) |
+| 17 | Boundry of traversal | [Code](Trees/Boundary_traversal.cpp) |
+| 18 | Vertical Order Traversal | [Code](Trees/987_Vertical_Order_raversal.cpp) |
 
+
+---
+##  Binary Search Trees 
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
+| 1 | Implementation of BST | [Code](BST/BST.cpp) |
+---
 ## Graph Problems
-
+| # | Problem | LeetCode | Solution |
+|---|--------|---------|---------|
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | BFS | 1 | [code](graph/bfs.cpp) |
-
-
+---
 ## Math Problems
-
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Reverse Integer | 7 | [Code](Math/7_reverse_integer.cpp) |
 | 2 | Palindrome Number | 9 | [Code](Math/9_palindrome_number.cpp) |
 
 ---
-
 ## Linked List Problems
 
 | # | Problem | LeetCode | Solution |
@@ -125,13 +135,13 @@ Problems solved from:
 | 2 | Longest Substring Without Repeating Characters | 3 | [Code](SlidingWindow/3_longest_substring_without_repeating.cpp) |
 | 3 | Container With Most Water | 11 | [Code](TwoPointers/11_container_with_most_water.cpp) |
 
---
-
+---
 ## Matrix Problems
 
 | # | Problem | LeetCode | Solution |
 |---|--------|---------|---------|
 | 1 | Matrix Diagonal Sum | 1572 | [Code](Matrix/1572_diagonal_sum.cpp) |
+---
 
 # GeeksforGeeks Problems
 
@@ -143,10 +153,7 @@ Problems solved from:
 
 ## Progress
 
-LeetCode Problems: 33
-GeeksforGeeks Problems: 1  
-
-Total Problems Solved: **38**
+Total Problems Solved: **55**
 
 Language Used: **C++**
 
