@@ -10,7 +10,7 @@ public:
         for (int i = 0; i < n - 2; i++) {
             // Optimization: If the current smallest number is > 0, 
             // no three numbers can sum up to 0.
-            if (nums[i] > 0) break;
+      
             
             // 2️⃣ Skip duplicates for the first element
             if (i > 0 && nums[i] == nums[i - 1]) continue;
@@ -46,4 +46,3 @@ public:
         return anss;
     }
 };
-
