@@ -1,23 +1,25 @@
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-          int left = 0;
-    int current_sum = 0;
-    int min_len = INT_MAX; // Initialize with the Max Int we discussed!
+        int left = 0;
+        int currentSum = 0;
+        int minLength = INT_MAX;
 
-    for (int right = 0; right < nums.size(); right++) {
-        current_sum += nums[right]; // Expand the window
+        for (int right = 0; right < nums.size(); right++) {
+            // Expand window to the right
+            currentSum += nums[right];
 
-        // While the window meets the condition, try to shrink it
-        while (current_sum >= target) {
-            min_len = std::min(min_len, right - left + 1);
-            current_sum -= nums[left];
-            left++;
+            // Shrink from left while sum is >= target
+            while (currentSum >= target) {
+                // Update minimum length
+                minLength = min(minLength, right - left + 1);
+
+                // Remove left element and move left pointer
+                currentSum -= nums[left];
+                left++;
+            }
         }
-    }
 
-    // If min_len was never updated, return 0
-    return (min_len == INT_MAX) ? 0 : min_len;
-
+        return (minLength == INT_MAX) ? 0 : minLength;
     }
 };
