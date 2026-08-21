@@ -1,23 +1,25 @@
 class Solution {
 public:
-    int lengthOfLongestSubstring(string s) {
-        vector<int> hash(256, -1);
+   int lengthOfLongestSubstring(string s) {
 
-        int l = 0, r = 0, maxlen = 0;
-        int n = s.size();
+    int left = 0;
+    int ans = 0;
 
-        while (r < n) {
-            // If character was seen before, move left pointer
-            // to the right of the previous occurrence
-            if (hash[s[r]] != -1) {
-                l = max(hash[s[r]] + 1, l);
-            }
+    int hash[256] = {0};
 
-            // Update last seen index and calculate length
-            hash[s[r]] = r;
-            maxlen = max(maxlen, r - l + 1);
-            r++;
+    for (int right = 0; right < s.length(); right++) {
+
+        hash[s[right]]++;
+
+        while (hash[s[right]] > 1) {
+
+            hash[s[left]]--;
+            left++;
         }
-        return maxlen;
+
+        ans = max(ans, right - left + 1);
     }
+
+    return ans;
+}
 };
