@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Explicitly forces write access for the runner script
 
     steps:
       - name: Sync Solutions
