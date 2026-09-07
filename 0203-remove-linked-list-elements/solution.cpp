@@ -11,31 +11,33 @@
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
-        // Handle cases where head itself needs to be removed
-    while (head != nullptr && head->val == val) {
-        ListNode* temp = head;
-        head = head->next;
-        delete temp;
-    }
-    
-    // If list is empty after removing head nodes
-    if (head == nullptr) {
-        return nullptr;
-    }
-    
-    // Remove nodes from the rest of the list
-    ListNode* current = head;
-    while (current->next != nullptr) {
-        if (current->next->val == val) {
-            ListNode* temp = current->next;
-            current->next = current->next->next;
-            delete temp;
-            // Don't move current - next node might also need deletion
-        } else {
-            current = current->next;
+        if (head == NULL)
+            return NULL;
+
+        ListNode* current = head;
+        ListNode* prev = NULL;
+
+        while (current != NULL) {
+            if (current->val == val) {
+                // Save next node before deleting current
+                ListNode* next = current->next;
+
+                if (prev == NULL) {
+                    // Removing head
+                    head = next;
+                } else {
+                    // Skip current node
+                    prev->next = next;
+                }
+
+                delete current;
+                current = next;
+            } else {
+                prev = current;
+                current = current->next;
+            }
         }
-    }
-    
-    return head;
+
+        return head;
     }
 };
