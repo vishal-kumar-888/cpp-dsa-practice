@@ -6,7 +6,7 @@ public:
         vector<int> ans(n, -1);
         stack<int> st;
 
-        for (int i = 0; i < 2 * n; i++) {
+        for (int i = 0; i < n+n; i++) {
 
             int index = i % n;
 
