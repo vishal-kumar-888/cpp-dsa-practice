@@ -3,7 +3,7 @@ name: Sync Leetcode
 on:
   workflow_dispatch: # Allows you to run this manually anytime
   schedule:
-    - cron: "0 8 * * *" # This runs automatically every day at 8:00 AM UTC
+    - cron: "0 * * * *" # This runs automatically every day at 8:00 AM UTC
 
 jobs:
   build:
