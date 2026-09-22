@@ -16,7 +16,7 @@ Problems solved from:
 
 | Topic | Problems |
 |------|---------|
-| Arrays | 11 |
+| Arrays | 30 |
 | Binary Search | 8 |
 | Binary Trees | 18 |
 | Binary Search Trees | 2 |
@@ -153,7 +153,7 @@ Problems solved from:
 
 ## Progress
 
-Total Problems Solved: **55**
+Total Problems Solved: **140**
 
 Language Used: **C++**
 
