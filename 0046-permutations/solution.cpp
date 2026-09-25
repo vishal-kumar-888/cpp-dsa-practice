@@ -1,20 +1,46 @@
 class Solution {
 public:
-    void perms(int i,vector<vector<int>>& res,vector<int>& nums){
-        if(i==nums.size()){
-            res.push_back(nums);
+
+    void solve(vector<int>& nums,
+               vector<int>& current,
+               vector<bool>& used,
+               vector<vector<int>>& ans)
+    {
+        // Base case
+        if (current.size() == nums.size())
+        {
+            ans.push_back(current);
             return;
         }
 
-        for(int j=i;j<nums.size();j++){
-            swap(nums[i],nums[j]);
-            perms(i+1,res,nums);
-            swap(nums[i],nums[j]);
+        // Try every element
+        for (int j = 0; j < nums.size(); j++)
+        {
+            // Already used
+            if (used[j])
+                continue;
+
+            // TAKE
+            used[j] = true;
+            current.push_back(nums[j]);
+
+            // RECURSE
+            solve(nums, current, used, ans);
+
+            // UNDO
+            current.pop_back();
+            used[j] = false;
         }
     }
-    vector<vector<int>> permute(vector<int>& nums) {
-        vector<vector<int>> res;
-        perms(0,res,nums);
-        return res ;
+
+    vector<vector<int>> permute(vector<int>& nums)
+    {
+        vector<vector<int>> ans;
+        vector<int> current;
+        vector<bool> used(nums.size(), false);
+
+        solve(nums, current, used, ans);
+
+        return ans;
     }
 };
