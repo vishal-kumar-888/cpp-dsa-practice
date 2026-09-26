@@ -1,12 +1,13 @@
 class Solution {
 public:
-    void ab(vector<vector<int>>& ans, vector<int>& nums,
-            vector<int>& cu, int i) {
+    void ab(vector<vector<int>>& ans, vector<int>& nums, vector<int>& cu,
+            int i) {
 
         if (i == nums.size()) {
             ans.push_back(cu);
             return;
         }
+       
 
         // TAKE
         cu.push_back(nums[i]);
