@@ -11,23 +11,19 @@
  */
 class Solution {
 public:
-   vector<int> inOrder(TreeNode* node, vector<int>& res) {
-    if (node == nullptr) return res;   
-    // Traverse the left subtree first
-    inOrder(node->left, res);
     
-    // Visit the current node
-    res.push_back(node->val);
-    
-    // Traverse the right subtree last
-    inOrder(node->right, res);
-    return res;
-}
+    void solve(TreeNode* root,vector<int> &ans){
+        if(root==nullptr) return;
+
+        solve(root->left,ans);
+        ans.push_back(root->val);
+        solve(root->right,ans);
+        
+    }
 
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> ans;
-        if(root == nullptr) return ans;
-
-        return inOrder(root,ans);
+       vector<int> ans;
+       solve(root,ans);
+       return ans; 
     }
 };
