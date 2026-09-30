@@ -1,42 +1,58 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left),
+ * right(right) {}
+ * };
+ */
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
-        vector<vector<int>> ans; // Fixed: added missing '>'
-        if (!root)
+            vector<vector<int>> ans;
+        if (root == nullptr)
             return ans;
 
-        queue<TreeNode*> q;
+        queue<TreeNode *> q;
         q.push(root);
-
-        bool leftToRight = true; // Flag to track the direction
-
-        while (!q.empty()) { // Fixed: condition must be !q.empty()
+        bool flag = false;
+        while (!q.empty())
+        {
             int size = q.size();
-            vector<int> levels;
+            vector<int> level;
+            
 
-            for (int i = 0; i < size; i++) {
-                TreeNode* node = q.front();
-                q.pop(); // Fixed: missing q.pop()
-
-                levels.push_back(
-                    node->val); // Fixed: missing node value insertion
+            for (int i = 0; i < size; i++)
+            {
+                TreeNode *node = q.front();
+                q.pop();
+                level.push_back(node->val);
 
                 if (node->left)
+                {
                     q.push(node->left);
+                }
                 if (node->right)
+                {
                     q.push(node->right);
+                }
             }
-
-            // If the direction is right-to-left, reverse the current level
-            if (!leftToRight) {
-                reverse(levels.begin(), levels.end());
+            int i = 0, j = level.size() - 1;
+            while (i < j && flag)
+            {
+                swap(level[i], level[j]);
+                i++;
+                j--;
             }
+            if(flag==false) flag = true;
+            else flag = false;
 
-            ans.push_back(levels);
-            leftToRight = !leftToRight; // Flip the flag for the next level
+            ans.push_back(level);
         }
-
         return ans;
     }
 };
-
