@@ -1,34 +1,22 @@
 class Solution {
 public:
-    int minimumRecolors(string blocks, int k) {
-        int white = 0;
+    int minimumRecolors(string nums, int k) {
+        int n = nums.size();
+        int ans = INT_MAX;
+        int left =0,right =0;
+        int white =0;
+        while(right<n){
 
-        // First window
-        for (int i = 0; i < k; i++) {
-            if (blocks[i] == 'W') {
+            if(nums[right]=='W'){
                 white++;
             }
-        }
-
-        int ans = white;
-
-        // Slide the window
-        for (int right = k; right < blocks.size(); right++) {
-            int left = right - k;
-
-            // Remove the character leaving the window
-            if (blocks[left] == 'W') {
-                white--;
+            if(right-left+1==k){
+                ans = min(ans,white);
+                if(nums[left]=='W') white--;
+                left++;
             }
-
-            // Add the character entering the window
-            if (blocks[right] == 'W') {
-                white++;
-            }
-
-            ans = min(ans, white);
+            right++;
         }
-
         return ans;
     }
 };
