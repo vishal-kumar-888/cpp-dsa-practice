@@ -8,16 +8,19 @@ public:
         if (n < windowSize) {
             return ans;
         }
-
-        vector<long long> prefixSum(n + 1);
-        for (int i = 0; i < n; ++i) {
-            prefixSum[i + 1] = prefixSum[i] + nums[i];
+        int right = 0;
+        int left = 0;
+        long long sum = 0;
+        while (right < n) {
+            sum += nums[right];
+            if (right - left + 1 == windowSize) {
+                
+                ans[left + k] = sum/windowSize;
+                sum -= nums[left++];
+            }
+            right++;
         }
-
-        for (int i = k; i + k < n; ++i) {
-            ans[i] = (prefixSum[i + k + 1] - prefixSum[i - k]) / windowSize;
-        }
-
+    
         return ans;
     }
 };
