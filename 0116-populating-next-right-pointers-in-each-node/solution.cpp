@@ -18,39 +18,31 @@ public:
 
 class Solution {
 public:
-    Node* connect(Node* root) {
-         if (!root) return nullptr;
-        
-        queue<Node*> q;
-        q.push(root);
+    Node* connect(Node* root){
+    if (root == nullptr) return nullptr;
 
-        while (!q.empty()) {
-            int size = q.size();
-            Node* prev = nullptr; // Tracks the previous node in the current level
-           
-            for (int i = 0; i < size; i++) {
-                Node* node = q.front();
-                q.pop();
-                
-                // If there's a previous node in this level, connect it to the current one
-                if (prev != nullptr) {
-                    prev->next = node;
-                }
-                
-                // Move the previous pointer to the current node
-                prev = node;
+    queue<Node*> q;
+    q.push(root);
 
-                // Push children for the next level
-                if (node->left)  q.push(node->left);
-                if (node->right) q.push(node->right);
-            }
-            
-            // The last node of the level explicitly points to NULL
+    while (!q.empty()) {
+        int size = q.size();
+        Node* prev = nullptr;
+
+        for (int i = 0; i < size; i++) {
+            Node* cur = q.front();
+            q.pop();
+
             if (prev != nullptr) {
-                prev->next = nullptr;
+                prev->next = cur; // connect previous node to current
             }
+            prev = cur; // update previous node
+
+            if (cur->left)  q.push(cur->left);
+            if (cur->right) q.push(cur->right);
         }
-        
-        return root;
+        prev->next = nullptr; // last node in the level points to nullptr
+    }
+
+    return root;
     }
 };
