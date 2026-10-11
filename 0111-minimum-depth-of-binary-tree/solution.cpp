@@ -13,12 +13,27 @@
 class Solution {
 public:
     int minDepth(TreeNode* root) {
+        // using bfs to find the first leaf node
         if (root == nullptr)
             return 0;
-        int left = minDepth(root->left);
-        int right = minDepth(root->right);
-        if(left==0 && right > 0) return right+1;
-        if(right==0 && left > 0) return left+1;
-        return min(left,right)+1;
+        queue<TreeNode*> q;
+        q.push(root);
+        int depth = 0;
+        while (!q.empty()) {
+            depth++;
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode* curr = q.front();
+                q.pop();
+                if (curr->left == nullptr && curr->right == nullptr) {
+                    return depth;
+                }
+                if (curr->left)
+                    q.push(curr->left);
+                if (curr->right)
+                    q.push(curr->right);
+            }
+        }
+        return depth;
     }
 };
