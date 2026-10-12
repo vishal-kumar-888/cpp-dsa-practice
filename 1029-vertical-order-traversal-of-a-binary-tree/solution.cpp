@@ -6,51 +6,51 @@
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
  *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left),
+ * right(right) {}
  * };
  */
 class Solution {
 public:
     vector<vector<int>> verticalTraversal(TreeNode* root) {
-        if(root==NULL){
-            return {};
-        }
+        vector<vector<int>> ans;
+        if (root == nullptr)
+            return ans;
 
-        //map each col no to its level and value of node 
-        map<int , vector<pair<int ,int > > > mp;
+        // Map: HD → list of (level, value) pairs
+        // Why pair? Because C++ sorts pairs by (first, then second)
+        // automatically
+        map<int, vector<pair<int, int>>> verticalNodes;
 
-        //queue stores nodes along with their col no and level
-        queue<tuple <TreeNode* , int ,int> > q;
+        // Queue holds: (node, horizontal distance, level)
+        queue<tuple<TreeNode*, int, int>> q;
+        q.push({root, 0, 0});
 
-        //push root node to the queue
-        q.push({root,0,0});
-
-        while(!q.empty()){
-            //access the front node 
-            auto[curr, level,col]=q.front();
+        // ---- BFS: collect all nodes with their (HD, level, value) ----
+        while (!q.empty()) {
+            auto [cur, hd, lvl] = q.front();
             q.pop();
-            //map the node and its level to the col
-            mp[col].push_back({level,curr->val});
-            if(curr->left!=NULL){
-                q.push({curr->left,level+1,col-1});
-            }
-            if(curr->right!=NULL){
-                q.push({curr->right,level+1,col+1});
-            }
 
-        }
-        vector<vector<int> > levels;
-        for(auto &p : mp){
-            //to sort the values having same col no
-            sort(p.second.begin(),p.second.end());
-            vector<int> ans;
-            for(auto &a : p.second){
-                
-                ans.push_back(a.second);
+            // Store (level, value) under this HD
+            verticalNodes[hd].push_back({lvl, cur->val});
 
-            }
-            levels.push_back(ans);
+            if (cur->left)
+                q.push({cur->left, hd - 1, lvl + 1});
+            if (cur->right)
+                q.push({cur->right, hd + 1, lvl + 1});
         }
-        return levels;
+
+        // ---- Post-process: sort each column, extract values ----
+        for (auto& [hd, vec] : verticalNodes) { // auto& → modify in-place
+            sort(vec.begin(), vec.end());       // sorts by level, then value
+
+            vector<int> col;
+            for (auto& [lvl, val] : vec) {
+                col.push_back(val); // keep only value
+            }
+            ans.push_back(col);
+        }
+
+        return ans;
     }
 };
