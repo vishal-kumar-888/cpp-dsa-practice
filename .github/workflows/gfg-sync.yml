@@ -1,0 +1,31 @@
+name: Sync GeeksforGeeks
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *" # Runs every hour (Note: Your comment said 8 AM, but 0 * * * * runs every hour. For 8 AM, use "0 8 * * *")
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run GFG Sync Script
+        env:
+          GFG_AUTH_COOKIE: ${{ secrets.GFG_AUTH_COOKIE }}
+        run: |
+          python .github/scripts/gfg_sync.py
